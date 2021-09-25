@@ -35,6 +35,9 @@ $Getdata = $data->GetData_All();
         <li class="nav-item">
           <a class="nav-link" href="datasuhu.php"><button class="btn btn-outline-secondary" type="submit">DATA SUHU</button></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.php"><button class="btn btn-outline-primary" type="submit">INFORMASI</button></a>
+        </li>
       </ul>
     </div>
   </div>

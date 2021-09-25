@@ -5,10 +5,12 @@
 
 <?php 
 include "konek.php";
+$db = new konek();
+$con = $db->connect();
 if(isset($_POST['btn']))
 {
 		$mode=$_POST['status'];
-		mysqli_query($konek, "update mode set mode='$mode' where id=1");
+		mysqli_query($con, "update mode set mode='$mode' where id=1");
 }
 
 $konek=mysqli_connect("localhost", "root", "", "websensor");
@@ -39,14 +41,18 @@ if ($mode==0)
         <li class="nav-item">
           <a class="nav-link" href="datasuhu.php"><button class="btn btn-outline-secondary" type="submit">DATA SUHU</button></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.php"><button class="btn btn-outline-primary" type="submit">INFORMASI</button></a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
+<h1 style="text-align: center; margin-top: 25px;">SETTING MODE</h1>
 
 <div class="container border border-primary border-3" style="text-align: center; margin-top: 100px; padding: 20px; width: 500px">
-	<h2><b>	Setting Mode </b></h2>
+	<h2><b>	Pilih Mode </b></h2>
 	<div class="panel panel-default"  >
 		<div class="panel-body" >
 

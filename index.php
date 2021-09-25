@@ -31,12 +31,17 @@
         <li class="nav-item">
           <a class="nav-link" href="datasuhu.php"><button class="btn btn-outline-secondary" type="submit">DATA SUHU</button></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.php"><button class="btn btn-outline-primary" type="submit">INFORMASI</button></a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+	
+	<h1 style="text-align: center; margin-top: 25px;">SELAMAT DATANG DI WEB SUHU SMKN 4 BOGOR</h1>
 
-	<div class="container border border-success border-3" style="text-align: center; padding: 20px; margin-top: 100px; width: 500px; height: 150px;">
+	<div class="container border border-success border-3" style="text-align: center; padding: 20px;margin-top: 10%; width: 500px; height: 150px;">
 		<h2>Nilai Sensor Suhu</h2>
 		<div class="panel panel-default">
 			<div class="panel-body">
